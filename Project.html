@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <style>
+    .bulb {
+    width: 100px;
+    height: 150px;
+    background: url('bulb-off1.png') no-repeat center center; /* Image of bulb off */
+    background-size: cover;
+    animation: bulbAnimation 5s infinite;
+   margin-left: 1000px;
+    }
+@keyframes bulbAnimation {
+    0%, 50% {
+        background: url('bulb-off1.png') no-repeat center center;
+        background-size: cover;
+    }
+    25%, 75% {
+        background: url('bulb-on1.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+h1{
+    font-size: 72px;
+    padding-left: 100px;
+    color: aliceblue;
+}
+body{
+    background-color: black;
+}
+.pro{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    padding-left: 150px;
+    line-gap-override: inherit;
+}
+.nav {
+    background-color: black;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  .nav :last-child{
+    margin-right: 0px;
+  }
+  .nav a {
+    display:inline;
+    color: white;
+    text-align: horizontal;
+    padding: 30px;
+    text-decoration: none;
+    padding-right: 100px;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+        </style>
+    </head>
+    <body>
+        <div class = "nav">
+            <nav>
+                <a href = "index.html">Home</a>
+                <a href = "About.html">About</a>
+                <a href = "Project.html">Projects</a>
+                <a href = "Qualify.html">Education</a>
+                <a href = "Exp.html">Experience</a>
+                <a href = "Ach.html">Achievements</a>
+                <a href = "Contact.html">Contact</a>
+            </nav>
+        </div>
+        <h1>Projects Done</h1>
+        <div class="bulb"></div>
+        <div class="pro">
+            <li>Voice Assistant using python</li>
+            <li>Car Booking System using C</li>
+            <li>Trend-Sync AI and AR/VR App</li>
+            <li>Disaster Management Application</li>
+            <li>Course Registration Application</li>
+            <li>Delhi Air Quality Prediction</li>
+            <li>Cricket Field Analysis Prediction</li>
+            <li>Covid-19 Risk Analysis Prediction using SVM(Machine Learning)</li>
+        </div>
+
+    </body>
+</html>
